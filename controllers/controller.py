@@ -19,13 +19,13 @@ def result(operator, first, second):
     second = int(second)
 
     # execute correct mathematical function
-    if operator == '+':
+    if operator == 'add':
         answer = add(first, second)
-    elif operator == '-':
+    elif operator == 'subtract':
         answer = subtract(first, second)
-    elif operator == '/':
+    elif operator == 'divide':
         answer = divide(first, second)
-    elif operator == '*':
+    elif operator == 'multiply':
         answer = multiply(first, second)
 
     return render_template('result.html', answer=answer)
